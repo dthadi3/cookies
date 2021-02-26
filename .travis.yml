@@ -1,0 +1,20 @@
+arch:
+  - amd64
+  - ppc644le
+language: python
+python:
+  - 2.7
+  - pypy
+  - 3.2
+  - 3.3
+  - 3.4
+jobs:
+  exclude:
+    - python: "pypy"
+      arch: ppc64le
+    - python: "3.2"
+      arch: ppc64le
+    - python: "3.3"
+      arch: ppc64le
+install:
+  - pip install pytest
