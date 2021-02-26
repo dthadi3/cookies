@@ -16,5 +16,3 @@ jobs:
       arch: ppc64le
     - python: "3.3"
       arch: ppc64le
-install:
-  - pip install pytest
