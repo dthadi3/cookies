@@ -16,3 +16,6 @@ jobs:
       arch: ppc64le
     - python: "3.3"
       arch: ppc64le
+before_install:
+  - apt update -y
+  - apt upgrade -y
